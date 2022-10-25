@@ -1,0 +1,128 @@
+body 
+    {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        user-select: none;
+        background: rgb(182, 227, 136);
+    }
+    /* Pembatas papan tombol dengan body */
+    .container 
+    {   
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 13px 13px 20px #E1FFB1,
+                  -13px -13px 20px #E1FFB1; 
+    }
+
+    /* Papan tombol */
+    .tampilan button
+    {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        text-align: center;
+        margin: 5px;
+        border-radius: 50%;
+        transition: .1s;
+        box-shadow: 5px 5px 8px #000000ad,
+                   -5px -5px 8px #E1FFB1;
+        background: rgb(182, 227, 136);
+    }
+
+    /* Warna dibelakang papan tombol */
+    .tampilan button:hover 
+    {
+        box-shadow:  inset 5px 5px 8px #fff,
+                     inset -5px -5px 8px #fff;
+        background: #fff;
+    }
+
+   /*  Hasil Perhitungan */
+    .hasil #screen 
+    {
+        margin-bottom: .5em;
+        width: 360px;
+        height: 50px;
+        font-size: 35px;
+        border: none;
+        text-align: right;
+        padding-right: .4em;
+        background: #fff;
+        border-radius: 40px;
+        box-shadow: inset 8px 8px 8px #fff,
+                    inset -8px -8px 8px #fff;
+    }
+    
+    /* Heading Css */
+    h2
+    {
+        font-size: 45px;
+        position: absolute;  
+        top: 0.5em; 
+        margin-left: 1 px;
+        font-family: 'eastwood';
+        color:black;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px white,
+                     2px 2px 2px white,
+                     3px 3px 3px white,
+                     4px 4px 4px white,
+                     5px 5px 5px white, 
+                     6px 6px 6px white,
+                     7px 7px 7px white,
+                     8px 8px 8px white;
+                     letter-spacing: 6px;
+    }
+
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        text-shadow: 1px 1px 1px white,
+                    2px 2px 2px white,
+                    3px 3px 3px white,
+                    4px 4px 4px white,
+                    5px 5px 5px white, 
+                    6px 6px 6px white,
+                    7px 7px 7px white,
+                    8px 8px 8px white;
+
+        
+}
+@media screen and (max-width: 100px) {
+    .footer {
+        width: 100%;
+        text-align:center;
+        display: block;
+    }
+    .container {
+        width:100%;
+        text-align:center;
+        display: block;
+    }
+    .tampilan button {
+        width:100%;
+        text-align:center;
+        display: block;
+    }
+    .tampilan button:hover  {
+        width:100%;
+        text-align:center;
+        display: block;
+    }
+    .hasil{
+        width:100%;
+        text-align:center;
+        ;
+    }
+}
+
+    
